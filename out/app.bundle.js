@@ -60,6 +60,11 @@
 
 	var scene, camera, renderer, clock;
 	var emitter, particleGroup;
+	var particleCount = 900;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	    particleCount = 70;   
+	}
+
 	function init() {
 	    scene = new THREE.Scene();
 	    camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 10000);
@@ -80,7 +85,7 @@
 	        maxParticleCount:1500
 	    });
 	    emitter = new SPE.Emitter({
-	        particleCount: 500,
+	        particleCount: particleCount,
 	        maxAge: {
 	            value: 3,
 	        },

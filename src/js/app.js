@@ -8,7 +8,7 @@ var scene, camera, renderer, clock;
 var emitter, particleGroup;
 var particleCount = 900;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    particleCount = 100;   
+    particleCount = 70;   
 }
 
 function init() {
