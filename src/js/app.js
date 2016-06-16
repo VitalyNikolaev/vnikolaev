@@ -26,7 +26,7 @@ function initParticles() {
         maxParticleCount:1500
     });
     emitter = new SPE.Emitter({
-        particleCount: 1300,
+        particleCount: 500,
         maxAge: {
             value: 3,
         },
@@ -38,7 +38,7 @@ function initParticles() {
             value: new THREE.Vector3( 0, 0, 25 )
         },
         wiggle: {
-            spread: 40
+            spread: 20
         },
         size: {
             value: 100,
